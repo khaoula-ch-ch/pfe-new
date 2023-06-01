@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto' , sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background: url(back.jpg) ;
+    background-image: linear-gradient(rgba(0,0,0,7)) ;
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+.navbar{
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 50px;
+    cursor: pointer;
+}
+nav{
+    flex:1 ;
+    text-align: right;
+}
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 50px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+.row{
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+.col{
+    flex-basis: 50%;
+}
+h1{
+    color: black;
+    font-size: 50px;
+}
+.card{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin:10px 15px;
+    background-position:center ;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+.card1{
+background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTet8yOYRKjE7XGTW0lUa-YKRPvWQH3JCQAHA&usqp=CAU)}
+.card2{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqgO6hfKRdcWFDU2QVLCyM59rHwqMcxTVYCg&usqp=CAU);
+}
+.card3{
+    background-image: url(https://us.123rf.com/450wm/alekseyvanin/alekseyvanin1712/alekseyvanin171201481/91991509-vecteur-d-ic%C3%B4ne-de-message-sortant-signe-plat-rempli-pictogramme-solide-isol%C3%A9-sur-blanc.jpg?ver=6)
+}
+.card4
+{
+    background-image: url(data:image/png;base64,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);
+}
+.card:hover {
+    transform: translateY(-10px)
+}
+h3{
+    text-shadow: 0 0 15px #999;
+}
+h3 a {
+    text-decoration: none;
+    color: black;
+    
+}
+
+/* Add a black background color to the top navigation bar */
+.topnav {
+    overflow: hidden;
+    
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    
+    color: black;
+  }
+  
+  /* Style the "active" element to highlight the current page */
+  .topnav a.active {
+    
+    color: white;
+  }
+  
+  /* Style the search box inside the navigation bar */
+  .topnav input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+  }
+  
+  /* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+  @media screen and (max-width: 600px) {
+    .topnav a, .topnav input[type=text] {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+    }
+    .topnav input[type=text] {
+      border: 1px solid #ccc;
+    }
+  }
